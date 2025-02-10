@@ -1,0 +1,79 @@
+css
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://professionalblog.tognana.com/wp-content/uploads/2021/10/come-scegliere-piatti-per-ristorante-a-seconda-dello-stile.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #860000;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+div {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Sfondo semi-trasparente */
+    border-radius: 9px;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00; /* Colore dorato */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 9px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00; /* Colore dorato */
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e6b800; /* Colore dorato scuro */
+    transition: background-color 0.3s ease;
+}
+
+#myReservations {
+    margin-top: 30px;
+}
+
+#reservationList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reservationList li {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 9px 0;
+    padding: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reservationList li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
