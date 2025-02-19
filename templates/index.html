@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Link al file CSS nella cartella static -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Serve quando si apre un applicazione tramite Flask-->
+<script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Serve quando si apre un applicazione tramite Flask-->
+<title> Ristorante "A modo Mio" </title>
+</head>
+<body>
+<h1>Ristorante " A Modo Mio "</h1>
+<div id="/register">
+<h2>Registrati</h2>
+<input type="text" id="registerUsername" placeholder="Username">
+<input type="password" id="registerPassword" placeholder="Password">
+<button onclick="register()">Registrati</button>
+</div>
+<div id="login">
+<h2>Login</h2>
+<input type="text" id="loginUsername" placeholder="Username">
+<input type="password" id="loginPassword" placeholder="Password">
+<button onclick="login()">Login</button>
+</div>
+<div id="reservation">
+<h2>Effettua una Prenotazione</h2>
+<input type="date" id="date">
+<input type="time" id="time">
+<input type="number" id="guests" placeholder="Numero di ospiti">
+<button onclick="makeReservation()">Prenota ora!</button>
+</div>
+<div id="myReservations">
+<h2>Le mie prenotazioni</h2>
+<ul id="reservationList"></ul>
+</div>
+<div id="updateReservation" style="display:none;">
+<h2>Modifica una prenotazione</h2>
+<input type="hidden" id="updateReservationId">
+<input type="date" id="updateDate">
+<input type="time" id="updateTime">
+<input type="number" id="updateGuests" placeholder="Numero di ospiti">
+<button onclick="updateReservation()">Modifica</button>
+</div>
+</body>
+</html>
